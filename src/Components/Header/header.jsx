@@ -1,4 +1,10 @@
+import { StyleHeader } from "./styles"
 
-
-export default function Header (){
+export default function Header() {
+    return (
+        <StyleHeader>
+        </StyleHeader>
+    )
 }
+
+
