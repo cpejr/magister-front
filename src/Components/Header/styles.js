@@ -1,7 +1,7 @@
 import styled from "styled-components";
 //import { Link } from "react-router-dom";
 
-export const StyleHeader= styled.div`
+export const StyledHeader= styled.div`
 height: 90px;
 width: 100%;
 margin-bottom: 30px;
@@ -11,10 +11,21 @@ display: flex;
 align-items: center;
 font-size: 30px;
 gap: 20px;
+flex-direction: row;
 `
-export const StyleBotao = styled.button`
+export const Botao = styled.button`
 
- 
+background-color: #60A5FA;
+width: 100px;
+height: 50px;
+font-size: 20px;
+font-family: Merriweather;
+border: none;
+border-radius: 10px;
+margin-bottom: 30px;
+color: white;
+margin-left: 90%;
+margin-top:40px;
   
        
 `;

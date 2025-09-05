@@ -1,9 +1,10 @@
-import { StyleHeader } from "./styles"
+import {Botao, StyledHeader} from "./styles"
 
 export default function Header() {
     return (
-        <StyleHeader>
-        </StyleHeader>
+     <StyledHeader>
+        <Botao>Login</Botao>
+     </StyledHeader>
     )
 }
 
