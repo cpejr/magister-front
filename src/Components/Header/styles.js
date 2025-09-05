@@ -10,7 +10,7 @@ color: black;
 display: flex;
 align-items: center;
 font-size: 30px;
-gap: 20px;
+justify-content: space-between;
 flex-direction: row;
 `
 export const Botao = styled.button`
@@ -24,11 +24,26 @@ border: none;
 border-radius: 10px;
 margin-bottom: 30px;
 color: white;
-margin-left: 90%;
-margin-top:40px;
+//margin-left: 90%;
+margin-top:30px;
+margin-right: 10px;
   
-       
 `;
+
+export const Textos = styled.div`
+width: 200px;
+height: 50px;
+font-size: 20px;
+font-family: Merriweather;
+font-weight: bold;
+margin-bottom: 30px;
+margin-top:45px;
+margin-left: 150px;
+
+
+
+
+`
 
 /*export const StyledLink = styled(Link)`
     text-decoration: none;
