@@ -6,7 +6,7 @@ export default function Login (){
     const [nome, setNome] = useState("");
     const [profissao, setProfissao] = useState("");
     const profissoes = [
-    "Engenheiro",
+    "Psicanalista",
     "Estudante",
     "Professor",
   ];
