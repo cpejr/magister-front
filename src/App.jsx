@@ -4,7 +4,7 @@ import Texto from "./Pages/Texto/Texto"
 function App() {
 
   return (
-    <Login></Login>
+    <Texto></Texto>
   )
 }
 

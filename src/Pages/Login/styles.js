@@ -13,7 +13,7 @@ background-color: #E0F2FE;
 color: black;
 border-radius: 20px;
 width: 950px;
-height: 150px;
+height: 120px;
 font-size: 40px;
 font-weight: bold;
 font-family: Merriweather;
@@ -32,7 +32,7 @@ export const Select = styled.select`
 color: black;
 border-radius: 20px;
 width: 950px;
-height: 150px;
+height: 120px;
 font-size: 40px;
 font-weight: bold;
 font-family: Merriweather;
@@ -56,9 +56,9 @@ margin-bottom: 30px;
 
 export const Botao1 = styled.button`
 background-color: #60A5FA;
-width: 400px;
-height: 100px;
-font-size: 40px;
+width: 200px;
+height: 80px;
+font-size: 24px;
 font-family: Merriweather;
 border: none;
 border-radius: 10px;
@@ -67,9 +67,9 @@ margin-bottom: 30px;
 
 export const Botao2 = styled.button`
 background-color: #60A5FA;
-width: 400px;
-height: 100px;
-font-size: 40px;
+width: 200px;
+height: 80px;
+font-size: 24px;
 font-family: Merriweather;
 border: none;
 border-radius: 10px;
