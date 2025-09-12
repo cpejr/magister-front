@@ -1,26 +1,34 @@
 import styled from "styled-components";
+import pergaminho from "../../Components/Background/pergaminho.jpg"
 
 
 export const Container = styled.div`
-background-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-`
+  background-image: url(${pergaminho});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+
 export const Input = styled.input`
-background-color: #E0F2FE;
+background-color: #F0E7B0;
 color: black;
 border-radius: 20px;
-width: 950px;
-height: 120px;
-font-size: 40px;
+width: 800px;
+height: 110px;
+font-size: 25px;
 font-weight: bold;
 font-family: Merriweather;
 padding: 8px;
 border: none;
 align-self: center;
-margin-top: 30px;
+margin-top: 110px;
 margin-bottom: 30px;
 &::placeholder {
     color: black;
@@ -28,18 +36,18 @@ margin-bottom: 30px;
 `
 
 export const Select = styled.select`
-  background-color: #E0F2FE;
+  background-color: #F0E7B0;
 color: black;
 border-radius: 20px;
-width: 950px;
-height: 120px;
-font-size: 40px;
+width: 800px;
+height: 110px;
+font-size: 25px;
 font-weight: bold;
 font-family: Merriweather;
 padding: 8px;
 border: none;
 align-self: center;
-margin-top: 30px;
+margin-top: 60px;
 margin-bottom: 30px;
 /* Remover aparência nativa */
   appearance: none;
@@ -55,22 +63,13 @@ margin-bottom: 30px;
 
 
 export const Botao1 = styled.button`
-background-color: #60A5FA;
-width: 200px;
-height: 80px;
-font-size: 24px;
+background-color: #D5C97B;;
+width: 120px;
+height: 60px;
+font-size: 18px;
 font-family: Merriweather;
 border: none;
 border-radius: 10px;
 margin-bottom: 30px;
 `
 
-export const Botao2 = styled.button`
-background-color: #60A5FA;
-width: 200px;
-height: 80px;
-font-size: 24px;
-font-family: Merriweather;
-border: none;
-border-radius: 10px;
-`

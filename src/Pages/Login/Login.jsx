@@ -1,10 +1,12 @@
 import Header from "../../Components/Header/header";
-import { Botao1, Botao2, Container, Input , Select} from "./styles";
-import { useState } from "react";
+import { Botao1, Container, Input , Select} from "./styles";
+import { useState} from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login (){
     const [nome, setNome] = useState("");
     const [profissao, setProfissao] = useState("");
+    const navigate = useNavigate();
     const profissoes = [
     "Psicanalista",
     "Estudante",
@@ -24,7 +26,10 @@ export default function Login (){
                 value={profissao}
                 onChange={(e) => setProfissao(e.target.value)}
             >
-                <option value="">Profissão</option>
+                <option value="" disabled>
+                    Profissão
+                </option>
+
                 {profissoes.map((prof, index) => (
                 <option key={index} value={prof}>
                     {prof}
@@ -32,8 +37,7 @@ export default function Login (){
                 
                 ))}
             </Select>
-            <Botao1>Teste do Sistema</Botao1>
-            <Botao2>Gamificação</Botao2>
+            <Botao1 onClick={() => navigate("/texto")}>Login</Botao1>
         </Container>
     )
 }

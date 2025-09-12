@@ -1,11 +1,11 @@
 import styled from "styled-components";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const StyledHeader= styled.div`
 height: 90px;
 width: 100%;
-margin-bottom: 30px;
-background-color:  #E0F2FE;
+//margin-bottom: 30px;
+background-color:  #F0E7B0;
 color: black;
 display: flex;
 align-items: center;
@@ -15,7 +15,7 @@ flex-direction: row;
 `
 export const Botao = styled.button`
 
-background-color: #60A5FA;
+background-color: #D5C97B;
 width: 100px;
 height: 50px;
 font-size: 20px;
@@ -23,7 +23,7 @@ font-family: Merriweather;
 border: none;
 border-radius: 10px;
 margin-bottom: 30px;
-color: white;
+color: black;
 //margin-left: 90%;
 margin-top:30px;
 margin-right: 10px;
@@ -39,19 +39,19 @@ font-weight: bold;
 margin-bottom: 30px;
 margin-top:45px;
 margin-left: 150px;
-
-
-
-
 `
 
-/*export const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)`
     text-decoration: none;
+    font-size: 20px;
+    font-family: Merriweather;
     color: black;
     transition: color 0.3s;
-    margin-right: 200px;
+    margin-bottom: 35px;
+    margin-top: 45px;
+    margin-left: 150px;
 
     &:hover {
         color: #005fa3;
     }
-`;*/
+`;

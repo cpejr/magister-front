@@ -1,37 +1,47 @@
 import styled from "styled-components";
-
-
-
+import pergaminho from "../../Components/Background/pergaminho.jpg"
 
 export const Container = styled.div`
-background-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-`
-export const Input = styled.input`
-background-color: #E0F2FE;
-color: black;
-border-radius: 20px;
-width: 950px;
-height: 200px;
-font-size: 40px;
-font-weight: bold;
-font-family: Merriweather;
-padding: 8px;
-border: none;
-margin-top: 30px;
-margin-bottom: 30px;
-&::placeholder {
-    color: black; 
-  }
+  background-image: url(${pergaminho});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const Input = styled.textarea`
+  background-color: #DED6A2;
+  color: black;
+  border-radius: 20px;
+  width: 950px;
+  height: 350px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Merriweather;
+  padding: 8px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  resize: none;
+  overflow: auto;
+  line-height: 1.5;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: black;
+  }
+`;
+
 
 
 export const Botao1 = styled.button`
-background-color: #60A5FA;
+background-color: #D5C97B;;
 font-family: Merriweather;
 width: 150px;
 height: 60px;
@@ -43,7 +53,7 @@ margin-left: 800px;
 `
 
 export const Botao2 = styled.button`
-background-color: #60A5FA;
+background-color: #D5C97B;;
 font-family: Merriweather;
 width: 150px;
 height: 60px;
@@ -54,12 +64,12 @@ margin-left: 800px;
 `
 
 export const Transcrito = styled.div`
-background-color: white;
+background-color: #DED6A2;
 color: black;
 border-radius: 20px;
 width: 950px;
 height: 200px;
-font-size: 40px;
+font-size: 25px;
 font-weight: bold;
 font-family: Merriweather;
 padding: 8px;

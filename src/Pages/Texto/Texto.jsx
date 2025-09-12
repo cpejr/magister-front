@@ -6,7 +6,7 @@ import { Botao1, Botao2, Container, Input , Transcrito} from "./styles";
 export default function Texto(){
     const [texto, setTexto] = useState("");
 
-
+    console.log(texto);
     return ( 
         <Container>
             <Header></Header>
