@@ -17,7 +17,8 @@ export const Container = styled.div`
 
 
 export const Input = styled.input`
-background-color: #F0E7B0;
+background-color: transparent;
+border: 2px solid black;
 color: black;
 border-radius: 20px;
 width: 800px;
@@ -26,7 +27,6 @@ font-size: 25px;
 font-weight: bold;
 font-family: Merriweather;
 padding: 8px;
-border: none;
 align-self: center;
 margin-top: 110px;
 margin-bottom: 30px;
@@ -36,7 +36,8 @@ margin-bottom: 30px;
 `
 
 export const Select = styled.select`
-  background-color: #F0E7B0;
+background-color: transparent;
+border: 2px solid black;
 color: black;
 border-radius: 20px;
 width: 800px;
@@ -45,7 +46,6 @@ font-size: 25px;
 font-weight: bold;
 font-family: Merriweather;
 padding: 8px;
-border: none;
 align-self: center;
 margin-top: 60px;
 margin-bottom: 30px;
