@@ -8,8 +8,13 @@ import {
   Titulo,
   Texto,
 } from "../Style";
+import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
   return (
     <>
       <Cabecalho>
@@ -18,7 +23,17 @@ function Home() {
           <MenuItem to="/">Gamificação</MenuItem>
           <MenuItem to="/">Tradutor</MenuItem>
         </Centro>
-        <BotaoLogin onClick={() => alert("Login realizado")}>LOGIN</BotaoLogin>
+
+        {user ? (
+          <>
+            <span style={{ color: "white", marginRight: "20px" }}>
+              Olá, {user.nome}!
+            </span>
+            <BotaoLogin onClick={logout}>Sair</BotaoLogin>
+          </>
+        ) : (
+          <BotaoLogin onClick={() => navigate("/login")}>LOGIN</BotaoLogin>
+        )}
       </Cabecalho>
 
       <MainArea>
