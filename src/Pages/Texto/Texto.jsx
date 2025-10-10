@@ -5,21 +5,21 @@ import { useTranscreverTexto } from "../../Hooks/useTranscricao";
 
 
 export default function Texto(){
-    const [texto, setTexto] = useState("");
+    const [text, setText] = useState("");
     
     const {mutate: transcreverTexto, data, isLoading, isError} = useTranscreverTexto({
-        onSuccess : (texto) => {
+        onSuccess : (text) => {
              console.log("Transcrição recebida!")
         },
         onError: () => { console.log("Erro")}
     })
 
     const handleTranscricao  = () => {
-        if(texto){
-            transcreverTexto({texto});
+        if(text){
+            transcreverTexto({text});
         }
     }
-    console.log(texto);
+    console.log(text);
     return ( 
         <Container>
             <Header></Header>
@@ -27,8 +27,8 @@ export default function Texto(){
             <Input 
             type="text" 
             placeholder="Escreva aqui..."
-            value={texto}
-            onChange={(e) => setTexto(e.target.value) }
+            value={text}
+            onChange={(e) => setText(e.target.value) }
             ></Input>
 
             <Botao1 onClick={handleTranscricao} disabled={isLoading}>

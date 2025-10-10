@@ -1,6 +1,5 @@
-import Login from "./Pages/Login/Login"
-import Texto from "./Pages/Texto/Texto"
-import Routes from "../routes"
+
+import Routes from "../src/routes"
 function App() {
 
   return (

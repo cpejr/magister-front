@@ -4,10 +4,10 @@ import { useState} from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login (){
-    const [nome, setNome] = useState("");
-    const [profissao, setProfissao] = useState("");
+    const [name, setName] = useState("");
+    const [profession, setProfession] = useState("");
     const navigate = useNavigate();
-    const profissoes = [
+    const professions = [
     "Psicanalista",
     "Estudante",
     "Professor",
@@ -19,18 +19,18 @@ export default function Login (){
             <Input 
             type="text" 
             placeholder="Nome"
-            value = {nome}
-            onChange={(e) => setNome(e.target.value)}
+            value = {name}
+            onChange={(e) => setName(e.target.value)}
             ></Input>
             <Select
-                value={profissao}
-                onChange={(e) => setProfissao(e.target.value)}
+                value={profession}
+                onChange={(e) => setProfession(e.target.value)}
             >
                 <option value="" disabled>
                     Profissão
                 </option>
 
-                {profissoes.map((prof, index) => (
+                {professions.map((prof, index) => (
                 <option key={index} value={prof}>
                     {prof}
                 </option>
