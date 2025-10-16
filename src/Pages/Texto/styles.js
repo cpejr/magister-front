@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pergaminho from "../../Components/Background/pergaminho.jpg"
+import pergaminho from "../../Components/Background/pergaminho.jpg";
 
 export const Container = styled.div`
   background-image: url(${pergaminho});
@@ -38,8 +38,6 @@ export const Input = styled.textarea`
     color: black;
   }
 `;
-
-
 
 export const Botao1 = styled.button`
 background-color: #D5C97B;;

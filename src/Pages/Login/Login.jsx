@@ -1,6 +1,6 @@
 import Header from "../../Components/Header/header";
-import { Botao1, Container, Input , Select} from "./styles";
-import { useState} from "react";
+import { Botao1, Container, Input, Select } from "./styles";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login (){
