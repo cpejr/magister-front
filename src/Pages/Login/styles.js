@@ -8,7 +8,6 @@ export const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,15 +16,16 @@ export const Container = styled.div`
 
 
 export const Input = styled.input`
-background-color: transparent;
+background-color: rgba(80, 80, 80, 0.2);
 border: 2px solid black;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 color: black;
 border-radius: 20px;
 width: 800px;
 height: 110px;
 font-size: 25px;
 font-weight: bold;
-font-family: Merriweather;
+font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 padding: 8px;
 align-self: center;
 margin-top: 110px;
@@ -36,7 +36,8 @@ margin-bottom: 30px;
 `
 
 export const Select = styled.select`
-background-color: transparent;
+background-color: rgba(80, 80, 80, 0.2);
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 border: 2px solid black;
 color: black;
 border-radius: 20px;
@@ -44,7 +45,7 @@ width: 800px;
 height: 110px;
 font-size: 25px;
 font-weight: bold;
-font-family: Merriweather;
+font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 padding: 8px;
 align-self: center;
 margin-top: 60px;
@@ -67,9 +68,10 @@ background-color: #D5C97B;;
 width: 120px;
 height: 60px;
 font-size: 18px;
-font-family: Merriweather;
+font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 border: none;
 border-radius: 10px;
 margin-bottom: 30px;
+
 `
 
