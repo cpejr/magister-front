@@ -25,7 +25,6 @@ export default function Texto() {
       transcreverTexto({ text });
     }
   };
-  console.log(text);
   return (
     <Container>
       <Header></Header>
