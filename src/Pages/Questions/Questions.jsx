@@ -1,6 +1,6 @@
 // src/pages/Questions/Questions.jsx
 
-import Header from "../../Components/Header/Header";
+import Header from "../../Components/Header/header";
 
 export default function Questions() {
   return (
