@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 89vh;
 
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@ export const Input = styled.textarea`
   height: 350px;
   font-size: 22px;
   font-weight: bold;
-  font-family: Merriweather;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   padding: 8px;
   border: 2px solid black;
   margin-top: 30px;
@@ -40,7 +40,7 @@ export const Input = styled.textarea`
 
 export const Botao1 = styled.button`
   background-color: #d5c97b;
-  font-family: Merriweather;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   width: 150px;
   height: 60px;
   font-size: 20px;
@@ -52,7 +52,7 @@ export const Botao1 = styled.button`
 
 export const Botao2 = styled.button`
   background-color: #d5c97b;
-  font-family: Merriweather;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   width: 150px;
   height: 60px;
   font-size: 20px;
@@ -63,16 +63,17 @@ export const Botao2 = styled.button`
 `;
 
 export const Transcrito = styled.div`
-  background-color: transparent;
+  background-color: rgba(80, 80, 80, 0.2);
   color: black;
   border-radius: 20px;
   width: 950px;
   height: 100px;
   font-size: 25px;
   font-weight: bold;
-  font-family: Merriweather;
+  border: 2px solid black;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   padding: 8px;
-  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   margin-top: 30px;
   margin-bottom: 30px;
 `;

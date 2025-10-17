@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "../../Components/Header/header";
+import Header from "../../Components/Header/Header";
 import { Botao1, Botao2, Container, Input, Transcrito } from "./styles";
 import { useTranscreverTexto } from "../../Hooks/useTranscricao";
 
@@ -26,25 +26,26 @@ export default function Texto() {
     }
   };
   return (
-    <Container>
+    <>
       <Header></Header>
+      <Container>
+        <Input
+          type="text"
+          placeholder="Escreva aqui..."
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        ></Input>
 
-      <Input
-        type="text"
-        placeholder="Escreva aqui..."
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      ></Input>
+        <Botao1 onClick={handleTranscricao} disabled={isLoading}>
+          {isLoading ? "Transcrevendo..." : "Transcrever"}
+        </Botao1>
 
-      <Botao1 onClick={handleTranscricao} disabled={isLoading}>
-        {isLoading ? "Transcrevendo..." : "Transcrever"}
-      </Botao1>
-
-      <Transcrito>
-        {isError && "Erro na transcrição"}
-        {data ? data.resultado : "Tradução..."}
-      </Transcrito>
-      <Botao2>Voltar</Botao2>
-    </Container>
+        <Transcrito>
+          {isError && "Erro na transcrição"}
+          {data ? data.resultado : "Tradução..."}
+        </Transcrito>
+        <Botao2>Voltar</Botao2>
+      </Container>
+    </>
   );
 }
