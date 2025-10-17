@@ -39,7 +39,7 @@ export default function Texto(){
                 {isError && "Erro na transcrição"}
                 {data ? data.resultado : "Tradução..."}
             </Transcrito>
-            <Botao2>Voltar</Botao2>
+            <Botao2>Apagar</Botao2>
         </Container>
     )
 }

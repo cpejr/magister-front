@@ -51,6 +51,7 @@ border: none;
 border-radius: 10px;
 margin-bottom: 30px;
 margin-left: 800px;
+cursor: pointer;
 `
 
 export const Botao2 = styled.button`
@@ -63,6 +64,7 @@ border: none;
 border-radius: 10px;
 margin-left: 800px;
 margin-bottom: 20px;
+cursor: pointer;
 `
 
 export const Transcrito = styled.div`

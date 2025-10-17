@@ -72,6 +72,6 @@ font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 border: none;
 border-radius: 10px;
 margin-bottom: 30px;
-
+cursor: pointer;
 `
 
