@@ -1,6 +1,5 @@
-import Header from "../../Components/Header/Header";
 import { MainArea, Content, Title, Text } from "./styles";
-
+import Header from "../../Components/Header/Header";
 function Home() {
   return (
     <>
@@ -12,7 +11,7 @@ function Home() {
             Nem tudo o que se lê está na superfície. Há camadas invisíveis onde
             o sentido repousa, silencioso, esperando ser tocado por quem vê além
             das letras.
-            <br /> O Magister é um espaço para essa travessia - onde o texto se
+            <br />O Magister é um espaço para essa travessia — onde o texto se
             abre e o sentido se revela em significado profundo
           </Text>
         </Content>

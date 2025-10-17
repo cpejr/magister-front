@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const MainArea = styled.main`
   width: 100%;
@@ -11,9 +10,12 @@ export const MainArea = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  text-align: center;
+`;
 
 export const Title = styled.h1`
   margin-bottom: 16px;
