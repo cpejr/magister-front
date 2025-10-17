@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Questions from "./pages/Questions/Questions";
 import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
@@ -9,12 +10,20 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
 
-      {}
       <Route
         path="/painel"
         element={
           <PrivateRoute>
             <h1>Página restrita</h1>
+          </PrivateRoute>
+        }
+      />
+
+      <Route
+        path="/questions"
+        element={
+          <PrivateRoute>
+            <Questions />
           </PrivateRoute>
         }
       />

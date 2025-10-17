@@ -1,43 +1,43 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const EstiloGlobal = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: Arial;
-    background-color: white;
-    color: black;
-  }
-`;
-
-export const Cabecalho = styled.header`
+export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
   background-color: #4a2803ff;
   height: 100px;
+  position: relative;
 `;
 
-export const Esquerda = styled.div`
-  flex: 1;
-`;
-
-export const Centro = styled.nav`
+export const Center = styled.nav`
   display: flex;
   gap: 50px;
   flex: 2;
   justify-content: center;
+
+  @media (max-width: 728px) {
+    display: none;
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      background-color: #4a2803ff;
+      padding: 20px 0;
+      gap: 20px;
+      align-items: center;
+    }
+  }
 `;
 
 export const MenuItem = styled(Link)`
   text-decoration: none;
-  color: #ffffffff;
+  color: white;
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s;
@@ -47,16 +47,10 @@ export const MenuItem = styled(Link)`
   }
 `;
 
-export const Direita = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-`;
-
-export const BotaoLogin = styled.button`
+export const ButtonLogin = styled.button`
   padding: 10px 30px;
   border: none;
-  background-color: #ffffffff;
+  background-color: white;
   color: black;
   border-radius: 10px;
   cursor: pointer;
@@ -65,8 +59,31 @@ export const BotaoLogin = styled.button`
 
   &:hover {
     color: #60a5fa;
-    background-color: white;
     border: 2px solid #60a5fa;
+  }
+`;
+
+export const Burger = styled.div`
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+
+  @media (max-width: 728px) {
+    display: block;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: none;
+
+  @media (max-width: 728px) {
+    display: flex;
+    flex-direction: column;
+    background-color: #4a2803ff;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
   }
 `;
 
@@ -82,19 +99,19 @@ export const MainArea = styled.main`
   align-items: flex-start;
 `;
 
-export const Conteudo = styled.div`
+export const Content = styled.div`
   max-width: 1200px;
   padding: 32px;
 `;
 
-export const Titulo = styled.h1`
+export const Title = styled.h1`
   margin-bottom: 16px;
   font-family: "Merriweather", serif;
   font-size: 80px;
   text-align: center;
 `;
 
-export const Texto = styled.p`
+export const Text = styled.p`
   line-height: 1.6;
   font-size: 16px;
   text-align: justify;

@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../../context/AuthContext";
 import {
-  Cabecalho,
+  Header,
   MainArea,
-  Conteudo,
-  Titulo,
-  Texto,
-  BotaoLogin,
-} from "../Style";
+  Content,
+  Title,
+  Label,
+  Input,
+  Select,
+  Button,
+} from "./LoginStyle";
 
 function Login() {
   const [nome, setNome] = useState("");
@@ -24,35 +26,34 @@ function Login() {
 
   return (
     <>
-      <Cabecalho>
-        <Titulo style={{ fontSize: "32px", color: "white" }}>Login</Titulo>
-      </Cabecalho>
+      <Header>
+        <Title>Login</Title>
+      </Header>
 
       <MainArea>
-        <Conteudo>
+        <Content>
           <form onSubmit={handleSubmit}>
-            <Texto>Nome:</Texto>
-            <input
+            <Label>Nome:</Label>
+            <Input
               type="text"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
               required
             />
 
-            <Texto>Profissão:</Texto>
-            <select
+            <Label>Profissão:</Label>
+            <Select
               value={profissao}
               onChange={(e) => setProfissao(e.target.value)}
             >
               <option value="estudante">Estudante</option>
               <option value="psicanalista">Psicanalista</option>
               <option value="professor">Professor</option>
-            </select>
+            </Select>
 
-            <br />
-            <BotaoLogin type="submit">Entrar</BotaoLogin>
+            <Button type="submit">Entrar</Button>
           </form>
-        </Conteudo>
+        </Content>
       </MainArea>
     </>
   );
