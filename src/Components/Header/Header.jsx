@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 import { useState } from "react";
-import logo from "../Logo/logo.png";
+import logo from "../Logo/logoMagister.png";
 import {
   HeaderWrapper,
   Center,

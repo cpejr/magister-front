@@ -11,6 +11,7 @@ export const MainArea = styled.main`
   justify-content: center;
   align-items: center;
   text-align: center;
+  filter: brightness(1) saturate(0.8);
 `;
 
 export const Content = styled.div`

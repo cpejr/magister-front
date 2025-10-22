@@ -12,14 +12,33 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+  }
+
+  > * {
+    z-index: 3;
+    position: relative;
+  }
 `;
 
 export const Input = styled.textarea`
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
   border-radius: 20px;
-  width: 950px;
-  height: 350px;
+  width: 70%;
+  height: 20vh;
   font-size: 22px;
   font-weight: bold;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -32,6 +51,7 @@ export const Input = styled.textarea`
   overflow: auto;
   line-height: 1.5;
   box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
   &::placeholder {
     color: black;
@@ -63,17 +83,21 @@ export const Botao2 = styled.button`
 `;
 
 export const Transcrito = styled.div`
-  background-color: rgba(80, 80, 80, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
   border-radius: 20px;
-  width: 950px;
-  height: 100px;
+  width: 70%;
+
+  height: 20vh;
   font-size: 25px;
   font-weight: bold;
   border: 2px solid black;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   padding: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   margin-top: 30px;
   margin-bottom: 30px;
+
+  overflow-y: auto;
+  word-wrap: break-word;
 `;
