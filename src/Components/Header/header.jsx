@@ -17,7 +17,7 @@ export default function Header() {
          <Divider>|</Divider>
         <StyledLink to = "/texto"> Dixit</StyledLink>
          <Divider>|</Divider>
-        <StyledLink to = "/gamificação">Labore</StyledLink>
+        <StyledLink to = "/questions">Labore</StyledLink>
         </ContainerLink>
         <Botao onClick={() => navigate("/login")}>Login</Botao>
      </StyledHeader>
