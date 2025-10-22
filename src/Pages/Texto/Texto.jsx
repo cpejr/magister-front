@@ -11,6 +11,8 @@ export default function Texto() {
     data,
     isLoading,
     isError,
+    // ESSENCIAL: Pegar a função 'reset' do hook de mutação
+    reset,
   } = useTranscreverTexto({
     onSuccess: (text) => {
       console.log("Transcrição recebida!");
@@ -21,10 +23,17 @@ export default function Texto() {
   });
 
   const handleTranscricao = () => {
+    reset();
     if (text) {
       transcreverTexto({ text });
     }
   };
+
+  const handleLimparTraducao = () => {
+    setText("");
+    reset();
+  };
+
   return (
     <>
       <Header></Header>
@@ -44,7 +53,7 @@ export default function Texto() {
           {isError && "Erro na transcrição"}
           {data ? data.resultado : "Tradução..."}
         </Transcrito>
-        <Botao2>Voltar</Botao2>
+        <Botao2 onClick={handleLimparTraducao}>Apagar</Botao2>
       </Container>
     </>
   );

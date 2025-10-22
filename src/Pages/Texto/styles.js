@@ -80,6 +80,7 @@ export const Botao2 = styled.button`
   border-radius: 10px;
   margin-left: 800px;
   margin-bottom: 20px;
+  cursor: pointer;
 `;
 
 export const Transcrito = styled.div`
