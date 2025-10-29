@@ -1,7 +1,7 @@
 
-import { Container, TextContainer, Texto, Title} from "./styles";
+import { Container, ImageContainer, ImageTextosContainer, TextContainer, Texto, Title} from "./styles";
 import Header from "../../Components/Header/header";
-
+import image from "../../Components/Image/image.jpg"
 
 export default function Questions (){
   const texts = [
@@ -150,11 +150,20 @@ return (
     <Container>
         <Header></Header>
         <Title>INSTRUMENTO DE INSTRUÇÃO</Title>
+        <ImageTextosContainer>
         <TextContainer>
             {texts.map((line, index) => (
                 <Texto key={index}>{line}</Texto>
             ))}
         </TextContainer>
+        <ImageContainer>
+            <img
+             src={image}
+             alt="Image">
+            </img>
+
+        </ImageContainer>
+        </ImageTextosContainer>
     </Container>
 )
 
