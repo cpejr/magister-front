@@ -7,7 +7,6 @@ export const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   min-height: 89vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +22,6 @@ export const Container = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
     z-index: 2;
   }
 
@@ -68,6 +66,9 @@ export const Botao1 = styled.button`
   border-radius: 10px;
   margin-bottom: 30px;
   margin-left: 800px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  cursor: pointer;
 `;
 
 export const Botao2 = styled.button`
@@ -81,6 +82,8 @@ export const Botao2 = styled.button`
   margin-left: 800px;
   margin-bottom: 20px;
   cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 `;
 
 export const Transcrito = styled.div`
@@ -88,7 +91,6 @@ export const Transcrito = styled.div`
   color: black;
   border-radius: 20px;
   width: 70%;
-
   height: 20vh;
   font-size: 25px;
   font-weight: bold;
@@ -98,7 +100,6 @@ export const Transcrito = styled.div`
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   margin-top: 30px;
   margin-bottom: 30px;
-
   overflow-y: auto;
   word-wrap: break-word;
 `;

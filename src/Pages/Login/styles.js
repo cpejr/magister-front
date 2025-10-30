@@ -19,6 +19,7 @@ export const MainArea = styled.main`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
 `;
 
 export const Content = styled.div`

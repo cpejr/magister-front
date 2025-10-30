@@ -11,7 +11,6 @@ export default function Texto() {
     data,
     isLoading,
     isError,
-    // ESSENCIAL: Pegar a função 'reset' do hook de mutação
     reset,
   } = useTranscreverTexto({
     onSuccess: (text) => {
