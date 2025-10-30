@@ -51,9 +51,6 @@ export default function Header() {
           <MenuItem to="/questions" onClick={() => setMenuOpen(false)}>
             Labore
           </MenuItem>
-          <MenuItem to="/" onClick={() => setMenuOpen(false)}>
-            Tradução DIXIT
-          </MenuItem>
         </MobileMenu>
       )}
     </>
