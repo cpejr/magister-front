@@ -1,9 +1,16 @@
+import {
+  Container,
+  ImageContainer,
+  ImageTextosContainer,
+  TextContainer,
+  Texto,
+  Title,
+} from "./styles";
 
-import { Container, ImageContainer, ImageTextosContainer, TextContainer, Texto, Title} from "./styles";
 import Header from "../../Components/Header/Header";
-import image from "../../Components/Image/image.jpg"
+import image from "../../Components/Image/image.jpg";
 
-export default function Questions (){
+export default function Questions() {
   const texts = [
     "Deus = Espírito Amor.",
     "Jesus Cristo = Sacrifício pelo",
@@ -143,28 +150,25 @@ export default function Questions (){
     "Inferno = Frequência.",
     "Morte = Vibração",
     "Cavaleiro Fiel e Verdadeiro = Filho",
-    "Varão da Mulher vestida de Sol = Forte Consciente Espírito Amor."
-];
+    "Varão da Mulher vestida de Sol = Forte Consciente Espírito Amor.",
+  ];
 
-return ( 
-    <Container>
-        <Header></Header>
+  return (
+    <>
+      <Header></Header>
+      <Container>
         <Title>INSTRUMENTO DE INSTRUÇÃO</Title>
         <ImageTextosContainer>
-        <TextContainer>
+          <TextContainer>
             {texts.map((line, index) => (
-                <Texto key={index}>{line}</Texto>
+              <Texto key={index}>{line}</Texto>
             ))}
-        </TextContainer>
-        <ImageContainer>
-            <img
-             src={image}
-             alt="Image">
-            </img>
-
-        </ImageContainer>
+          </TextContainer>
+          <ImageContainer>
+            <img src={image} alt="Image"></img>
+          </ImageContainer>
         </ImageTextosContainer>
-    </Container>
-)
-
-    }
+      </Container>
+    </>
+  );
+}

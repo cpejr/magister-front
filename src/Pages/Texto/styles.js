@@ -11,9 +11,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   position: relative;
   z-index: 1;
+  padding: 20px;
 
   &::before {
     content: "";
@@ -40,11 +40,9 @@ export const Input = styled.textarea`
   font-size: 22px;
   font-weight: bold;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  padding: 8px;
+  padding: 10px;
   border: 2px solid black;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 10px;
+  margin: 30px 0;
   resize: none;
   overflow: auto;
   line-height: 1.5;
@@ -53,6 +51,24 @@ export const Input = styled.textarea`
 
   &::placeholder {
     color: black;
+  }
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    font-size: 20px;
+    height: 18vh;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    font-size: 18px;
+    height: 16vh;
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+    font-size: 16px;
+    height: 14vh;
   }
 `;
 
@@ -64,11 +80,22 @@ export const Botao1 = styled.button`
   font-size: 20px;
   border: none;
   border-radius: 10px;
-  margin-bottom: 30px;
-  margin-left: 800px;
+  margin: 30px 0 0 0;
   box-sizing: border-box;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+  }
 `;
 
 export const Botao2 = styled.button`
@@ -79,11 +106,22 @@ export const Botao2 = styled.button`
   font-size: 20px;
   border: none;
   border-radius: 10px;
-  margin-left: 800px;
-  margin-bottom: 20px;
+  margin: 20px 0 0 0;
   cursor: pointer;
   box-sizing: border-box;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+  }
 `;
 
 export const Transcrito = styled.div`
@@ -98,8 +136,25 @@ export const Transcrito = styled.div`
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   padding: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   overflow-y: auto;
   word-wrap: break-word;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    font-size: 22px;
+    height: 18vh;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    font-size: 20px;
+    height: 16vh;
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+    font-size: 18px;
+    height: 14vh;
+  }
 `;

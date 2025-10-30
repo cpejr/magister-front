@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import pergaminho from "../../Components/Background/pergaminho.jpg";
+import pergaminho from "../../Components/Background/pergaminho.jpg"; // Não usado no código, mas mantido
 
 export const Container = styled.div`
-  background-image: url(${pergaminho});
+  background-image: url("/fundo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-attachment: fixed;
   position: relative;
-  z-index: 1;
   width: 100%;
   min-height: 100vh;
 
@@ -51,7 +51,8 @@ export const ImageTextosContainer = styled.div`
   justify-content: center;
   gap: 40px;
   margin-top: 30px;
-
+  align-items: flex-start;
+  padding-bottom: 50px;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -67,10 +68,8 @@ export const ImageContainer = styled.div`
   max-width: 600px;
 
   img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
+    height: 45%;
+    width: 45%;
   }
 
   @media (max-width: 1024px) {
@@ -93,8 +92,10 @@ export const TextContainer = styled.div`
   background-color: white;
   border: 2px solid black;
   border-radius: 20px;
-  height: 1175px;
-  overflow: scroll;
+  max-height: 60vh;
+  height: auto;
+
+  overflow: scroll; /* Mantido para rolagem */
   width: 48%;
   max-width: 600px;
   overflow-y: auto;
@@ -102,6 +103,7 @@ export const TextContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 90%;
+    /* ALTERADO: No mobile, a altura volta a ser automática (e a máxima removida) */
     height: auto;
     max-height: none;
   }
