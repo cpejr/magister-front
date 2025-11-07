@@ -51,6 +51,7 @@ export default function Header() {
           <MenuItem to="/questions" onClick={() => setMenuOpen(false)}>
             Labore
           </MenuItem>
+          <ButtonLogin onClick={logout}>Sair</ButtonLogin>
         </MobileMenu>
       )}
     </>

@@ -8,7 +8,7 @@ import {
 } from "./styles";
 
 import Header from "../../Components/Header/Header";
-import image from "../../Components/Image/Image.jpg";
+import image from "../../Components/Image/Magister.png";
 
 export default function Questions() {
   const texts = [
@@ -151,6 +151,31 @@ export default function Questions() {
     "Morte = Vibração",
     "Cavaleiro Fiel e Verdadeiro = Filho",
     "Varão da Mulher vestida de Sol = Forte Consciente Espírito Amor.",
+    "Igreja = Castidade",
+    "Arábia = Intensidade",
+    "Dragão vermelho = Sionismo",
+    "7 cabeças do dragão vermelho = Islamismo, Republicanismo, Renascentismo, Protestantismo, Iluminismo, Liberalismo, Laicismo",
+    "10 chifres do dragão vermelho = Sociologia, Psicologia, Pedagogia, Filosofia, Economia, Democracia, Aristocracia, Burocracia, Tecnocracia, Autocracia",
+    "Gog e Magogue = Estado e Modernidade",
+    "Besta de 2 chifres = Industrialismo",
+    "2 chifres = Militarismo e Mercantilismo",
+    "Babilônia = Cientificismo",
+    "Mulher vestida de sol = Cristianismo",
+    "Filho varão = Império do Brasil",
+    "Brasil = Abundância",
+    "Eliseu = Serviço",
+    "Da boca do sionismo dragão vermelho = Lei",
+    "Da boca do capitalismo besta de 7 cabeças = Lucro",
+    "Da boca do mercado falso profeta = Fome",
+    "Príncipe do mundo = Materialismo",
+    "Homem = Consciente",
+    "Mulher = Subconsciente",
+    "Terra = Alma",
+    "Alma = Consciência",
+    "Criança = Intuição",
+    "Paulo = Inspiração",
+    "Árvore/Planta/Erva = Sensação",
+    "Mar/Chuva/Rios/Águas = Energia",
   ];
 
   return (

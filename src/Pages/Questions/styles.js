@@ -12,7 +12,7 @@ export const Container = styled.div`
   background-attachment: fixed;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 89vh;
 
   @media (max-width: 768px) {
     padding-top: 50px;
@@ -65,23 +65,20 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 48%;
-  max-width: 600px;
 
   img {
-    height: 45%;
     width: 45%;
   }
 
   @media (max-width: 1024px) {
-    max-width: 90%;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
-    max-width: 95%;
+    width: 100%;
   }
 
   @media (max-width: 480px) {
-    max-width: 100%;
   }
 `;
 
@@ -95,7 +92,8 @@ export const TextContainer = styled.div`
   max-height: 60vh;
   height: auto;
 
-  overflow: scroll; /* Mantido para rolagem */
+  overflow: scroll;
+  overflow-x: hidden;
   width: 48%;
   max-width: 600px;
   overflow-y: auto;
@@ -103,9 +101,8 @@ export const TextContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 90%;
-    /* ALTERADO: No mobile, a altura volta a ser automática (e a máxima removida) */
     height: auto;
-    max-height: none;
+    max-height: 90vh;
   }
 
   @media (max-width: 480px) {
