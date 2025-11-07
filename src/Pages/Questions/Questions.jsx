@@ -8,7 +8,7 @@ import {
 } from "./styles";
 
 import Header from "../../Components/Header/Header";
-import image from "../../Components/Image/image.jpg";
+import image from "../../Components/Image/Image.jpg";
 
 export default function Questions() {
   const texts = [
