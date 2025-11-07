@@ -56,7 +56,7 @@ export const ButtonLogin = styled.button`
   border: none;
   background-color: white;
   color: black;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s;

@@ -67,7 +67,7 @@ export const ImageContainer = styled.div`
   width: 48%;
 
   img {
-    width: 45%;
+    width: 55%;
   }
 
   @media (max-width: 1024px) {
@@ -88,10 +88,9 @@ export const TextContainer = styled.div`
   padding: 20px;
   background-color: white;
   border: 2px solid black;
-  border-radius: 20px;
   max-height: 60vh;
   height: auto;
-
+  border-radius: 5px;
   overflow: scroll;
   overflow-x: hidden;
   width: 48%;

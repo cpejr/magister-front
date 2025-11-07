@@ -10,20 +10,19 @@ export const MainArea = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 0 15px;
 `;
 
 export const Content = styled.div`
   text-align: center;
-  max-width: 700px;
+  max-width: 50%;
   width: 100%;
   padding: 0 20px;
 `;
 
 export const Title = styled.h1`
   margin-bottom: 16px;
-  font-family: "Merriweather", serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 80px;
   text-align: center;
 
@@ -43,8 +42,9 @@ export const Title = styled.h1`
 export const Text = styled.p`
   line-height: 1.6;
   font-size: 16px;
-  text-align: justify;
+  text-align: center;
   margin: 0 auto;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-weight: bold;
 
   @media (max-width: 1024px) {

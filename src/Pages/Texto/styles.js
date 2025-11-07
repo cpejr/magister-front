@@ -34,8 +34,8 @@ export const Container = styled.div`
 export const Input = styled.textarea`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
-  border-radius: 20px;
   width: 70%;
+  border-radius: 5px;
   height: 20vh;
   font-size: 22px;
   font-weight: bold;
@@ -127,7 +127,6 @@ export const Botao2 = styled.button`
 export const Transcrito = styled.div`
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
-  border-radius: 20px;
   width: 70%;
   height: 20vh;
   font-size: 25px;
@@ -139,7 +138,7 @@ export const Transcrito = styled.div`
   margin: 30px 0;
   overflow-y: auto;
   word-wrap: break-word;
-
+  border-radius: 5px;
   @media (max-width: 1024px) {
     width: 80%;
     font-size: 22px;
