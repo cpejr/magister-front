@@ -1,12 +1,16 @@
+import React from "react"; 
 import { MainArea, Content, Title, Text } from "./styles";
-import Header from "../../Components/Header/Header";
+import Header from "../../Components/Header/Header"; 
+
 function Home() {
   return (
     <>
       <Header></Header>
       <MainArea>
         <Content>
-          <Title>Magister - sentidos revelados</Title>
+          <Title>
+            <span>M</span>agister - sentidos revelados
+          </Title>
           <Text>
             Magister é um método de leitura profunda no qual termos-chave são
             substituídos por significados-chave com o intuito de promover a

@@ -25,6 +25,13 @@ export const Title = styled.h1`
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 80px;
   text-align: center;
+  line-height: 1;
+  & > span {
+    font-size: 2em;
+    line-height: 0.8;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 500;
+  }
 
   @media (max-width: 1024px) {
     font-size: 60px;
